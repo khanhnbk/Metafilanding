@@ -1523,7 +1523,7 @@ position: relative;
 }
 .bx-platform-2{
 position: relative;
-padding: 0 15px;
+/* padding: 0 15px; */
 }
 .bx-platform-3{
 position: relative;
@@ -1536,7 +1536,7 @@ position: relative;
 }
 .bx-platform-5{
 position: relative;
-padding: 0 15px;
+/* padding: 0 15px; */
 }
 .bx-platform-6{
 position: relative;
@@ -1852,7 +1852,7 @@ width: 100%;
 padding-right: 1.5em;
 }
 .useCase-bx{
-padding: 0;
+/* padding: 0; */
 }
 .tab-useCase{
 flex-direction: column;
@@ -4117,7 +4117,7 @@ body {
 .bx-platform-3,
 .bx-platform-4,
 .bx-platform-6{
-  padding: 0 15px 15px 15px;
+  /* padding: 0 15px 15px 15px; */
 }
 .bx-meta-go-sys, .meta-wallet-sys, .meta-maketplace-sys{
   min-height: auto;
