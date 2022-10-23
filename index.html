@@ -350,10 +350,10 @@
           <div data-v-1ac287b5 class="video-background">
             <div class="video-foreground ">
               <div id="video-background">
-                
+
               </div>
             </div>
-          </div>       
+          </div>
         </div>
       </div>
       <div data-v-1ac287b5 class="content">
@@ -3432,7 +3432,7 @@
     event.target.playVideo();
   }
 
-  
+
 function jumpto(anchor){
   window.location.href = "#"+anchor;
 }
@@ -3454,6 +3454,16 @@ function jumpto(anchor){
     });
   }
 
+  function onVisibilityChange() {
+    if (document.visibilityState === 'visible') {
+      console.log("user is focused on the page")
+      window.location.reload()
+    } else {
+      console.log("user left the page")
+    }
+  }
+
+  document.addEventListener('visibilitychange', onVisibilityChange);
 
 </script>
 
