@@ -3456,10 +3456,8 @@ function jumpto(anchor){
 
   function onVisibilityChange() {
     if (document.visibilityState === 'visible') {
-      console.log("user is focused on the page")
-      window.location.reload()
+      window.location.replace(window.location.href);
     } else {
-      console.log("user left the page")
     }
   }
 
