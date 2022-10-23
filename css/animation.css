@@ -1,0 +1,170 @@
+@charset "utf-8";
+/* CSS Document */
+
+.animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+} 
+
+@-webkit-keyframes bounce {
+  0% {-webkit-transform: translateY(0);}
+  50% {-webkit-transform: translateY(-20px);}
+  100% {-webkit-transform: translateY(0);}
+} 
+
+@keyframes bounce { 
+  0% {-webkit-transform: translateY(0);}
+  50% {-webkit-transform: translateY(-20px);}
+  100% {-webkit-transform: translateY(0);}
+} 
+
+.bounce { 
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}
+
+.fadeInLeft {
+    animation-name: fadeInLeft;
+}
+.fadeInRight {
+    animation-name: fadeInRight;
+}
+.fadeInDown {
+    animation-name: fadeInDown;
+}
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+.animated-news {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.flipInX {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-name: flipInX;
+}
+@keyframes fadeInLeft{
+	0% {
+		opacity: 0;
+		transform: translate3d(-30%, 0, 0);
+	}
+}
+@keyframes fadeInRight{
+	0% {
+		opacity: 0;
+		transform: translate3d(30%, 0, 0);
+	}
+}
+@keyframes fadeInDown{
+	0% {
+		opacity: 0;
+		transform: translate3d(0, -30%, 0);
+	}
+}
+@keyframes fadeInUp{
+	0% {
+		opacity: 0;
+		transform: translate3d(0, 30%, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: none;
+	}
+}
+@keyframes flipInX{
+	0% {
+		transform: perspective(150px) rotate3d(1, 0, 0, 90deg);
+		animation-timing-function: ease-in;
+		opacity: 0;
+	}
+	40% {
+		transform: perspective(150px) rotate3d(1, 0, 0, -20deg);
+		animation-timing-function: ease-in;
+	}
+	60% {
+		transform: perspective(150px) rotate3d(1, 0, 0, 10deg);
+		opacity: 1;
+	}
+	80% {
+		transform: perspective(150px) rotate3d(1, 0, 0, -5deg);
+	}
+	100% {
+		transform: perspective(150px);
+	}
+}
+@font-face{
+	font-family: myFirstFont;
+	src: url("../fonts/UTM Alter Gothic.ttf");
+}
+@font-face{
+	font-family: mySfont;
+	src: url("../fonts/UTM Neutra.ttf");
+}
+.bellImg {
+    top: 50px;
+  transform: rotate(-3deg);
+  animation-name: rotate;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: 50% 0%;
+  animation-timing-function: ease-in-out;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+@keyframes rotate-container {
+  0% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
+@-webkit-keyframes flash {
+	from,
+	50%,
+	to {
+	  filter: brightness(110%);
+	  -moz-filter: brightness(110%);
+	  -webkit-filter: brightness(110%);
+	}
+  
+	25%,
+	75% {
+	  filter: brightness(90%);
+	  -moz-filter: brightness(90%);
+	  -webkit-filter: brightness(90%);
+	}
+  }
+  
+  @keyframes flash {
+	from,
+	50%,
+	to {
+	  filter: brightness(110%);
+	  -moz-filter: brightness(110%);
+	  -webkit-filter: brightness(110%);
+	}
+  
+	25%,
+	75% {
+	  filter: brightness(90%);
+	  -moz-filter: brightness(90%);
+	  -webkit-filter: brightness(90%);
+	}
+  }

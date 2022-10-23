@@ -1,0 +1,729 @@
+@font-face {
+  font-family: 'metafi';
+  src:  url('fonts/metafi.eot?21qqhm');
+  src:  url('fonts/metafi.eot?21qqhm#iefix') format('embedded-opentype'),
+    url('fonts/metafi.ttf?21qqhm') format('truetype'),
+    url('fonts/metafi.woff?21qqhm') format('woff'),
+    url('fonts/metafi.svg?21qqhm#metafi') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="metafi-"], [class*=" metafi-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'metafi' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.metafi-flagvietnam .path1:before {
+  content: "\e9bc";
+  color: rgb(218, 37, 29);
+}
+.metafi-flagvietnam .path2:before {
+  content: "\e9bd";
+  margin-left: -1.3154296875em;
+  color: rgb(255, 255, 0);
+}
+.metafi-flagkjngdom .path1:before {
+  content: "\e9be";
+  color: rgb(0, 36, 125);
+}
+.metafi-flagkjngdom .path2:before {
+  content: "\e9bf";
+  margin-left: -1.3681640625em;
+  color: rgb(207, 27, 43);
+}
+.metafi-flagkjngdom .path3:before {
+  content: "\e9c0";
+  margin-left: -1.3681640625em;
+  color: rgb(238, 238, 238);
+}
+.metafi-flagkjngdom .path4:before {
+  content: "\e9c1";
+  margin-left: -1.3681640625em;
+  color: rgb(207, 27, 43);
+}
+.metafi-flagjapan .path1:before {
+  content: "\e9c2";
+  color: rgb(255, 255, 255);
+}
+.metafi-flagjapan .path2:before {
+  content: "\e9c3";
+  margin-left: -1.3154296875em;
+  color: rgb(210, 47, 39);
+}
+.metafi-computer:before {
+  content: "\e9bb";
+}
+.metafi-iconMetafiGetApp:before {
+  content: "\e9ad";
+}
+.metafi-crypto:before {
+  content: "\e9ba";
+}
+.metafi-wallet2:before {
+  content: "\e9b9";
+}
+.metafi-about:before {
+  content: "\e900";
+}
+.metafi-account:before {
+  content: "\e901";
+}
+.metafi-activity1:before {
+  content: "\e902";
+}
+.metafi-analytics:before {
+  content: "\e903";
+}
+.metafi-android:before {
+  content: "\e904";
+}
+.metafi-arrow-down-fill:before {
+  content: "\e905";
+}
+.metafi-arrowLeft:before {
+  content: "\e906";
+}
+.metafi-arrowLeftFillCircle:before {
+  content: "\e907";
+}
+.metafi-arrowRight:before {
+  content: "\e908";
+}
+.metafi-art:before {
+  content: "\e909";
+}
+.metafi-availability:before {
+  content: "\e90a";
+}
+.metafi-beta-game:before {
+  content: "\e90b";
+}
+.metafi-bid:before {
+  content: "\e90c";
+}
+.metafi-book:before {
+  content: "\e90d";
+}
+.metafi-boxer:before {
+  content: "\e90e";
+}
+.metafi-brrowing:before {
+  content: "\e90f";
+}
+.metafi-business:before {
+  content: "\e910";
+}
+.metafi-buy:before {
+  content: "\e911";
+}
+.metafi-cancel:before {
+  content: "\e912";
+}
+.metafi-card-switch:before {
+  content: "\e913";
+}
+.metafi-careers:before {
+  content: "\e914";
+}
+.metafi-cash:before {
+  content: "\e915";
+}
+.metafi-circle:before {
+  content: "\e916";
+}
+.metafi-coinMetafi:before {
+  content: "\e917";
+}
+.metafi-collection:before {
+  content: "\e918";
+}
+.metafi-colspand:before {
+  content: "\e919";
+}
+.metafi-comd:before {
+  content: "\e91a";
+}
+.metafi-comic:before {
+  content: "\e91b";
+}
+.metafi-comment:before {
+  content: "\e91c";
+}
+.metafi-comment-dots:before {
+  content: "\e91d";
+}
+.metafi-community:before {
+  content: "\e91e";
+  color: #9c9fa9;
+}
+.metafi-contact:before {
+  content: "\e91f";
+  color: #9c9fa9;
+}
+.metafi-copy:before {
+  content: "\e920";
+}
+.metafi-coupon:before {
+  content: "\e921";
+}
+.metafi-credit:before {
+  content: "\e922";
+}
+.metafi-currency:before {
+  content: "\e923";
+}
+.metafi-chart:before {
+  content: "\e924";
+}
+.metafi-dashboad:before {
+  content: "\e925";
+}
+.metafi-delete:before {
+  content: "\e926";
+}
+.metafi-developer:before {
+  content: "\e927";
+}
+.metafi-docs:before {
+  content: "\e928";
+}
+.metafi-dots:before {
+  content: "\e929";
+}
+.metafi-dress:before {
+  content: "\e92a";
+}
+.metafi-earth:before {
+  content: "\e92b";
+}
+.metafi-ecosystem:before {
+  content: "\e92c";
+}
+.metafi-ecosystem1:before {
+  content: "\e92d";
+}
+.metafi-email:before {
+  content: "\e92e";
+}
+.metafi-event:before {
+  content: "\e92f";
+}
+.metafi-evnets:before {
+  content: "\e930";
+}
+.metafi-expand:before {
+  content: "\e931";
+}
+.metafi-eye:before {
+  content: "\e932";
+}
+.metafi-facebook-messenger:before {
+  content: "\e933";
+}
+.metafi-farm:before {
+  content: "\e934";
+}
+.metafi-feedback:before {
+  content: "\e935";
+  color: #9c9fa9;
+}
+.metafi-filter:before {
+  content: "\e936";
+}
+.metafi-fire:before {
+  content: "\e937";
+}
+.metafi-game:before {
+  content: "\e938";
+  color: #fff;
+}
+.metafi-gold:before {
+  content: "\e939";
+}
+.metafi-grid:before {
+  content: "\e93a";
+}
+.metafi-ginsen:before {
+  content: "\e93b";
+}
+.metafi-hand-money:before {
+  content: "\e93c";
+}
+.metafi-hand .path1:before {
+  content: "\e93d";
+  color: rgb(61, 61, 62);
+}
+.metafi-hand .path2:before {
+  content: "\e93e";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.metafi-hand .path3:before {
+  content: "\e93f";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.metafi-hand .path4:before {
+  content: "\e940";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.metafi-hand .path5:before {
+  content: "\e941";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.metafi-hand .path6:before {
+  content: "\e942";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.metafi-hand .path7:before {
+  content: "\e943";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.metafi-hand .path8:before {
+  content: "\e944";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.metafi-hand .path9:before {
+  content: "\e945";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.metafi-hand .path10:before {
+  content: "\e946";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.metafi-hand .path11:before {
+  content: "\e947";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.metafi-hand .path12:before {
+  content: "\e948";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.metafi-hand .path13:before {
+  content: "\e949";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.metafi-hand .path14:before {
+  content: "\e94a";
+  margin-left: -1em;
+  color: rgb(51, 51, 52);
+}
+.metafi-hand .path15:before {
+  content: "\e94b";
+  margin-left: -1em;
+  color: rgb(59, 59, 61);
+}
+.metafi-hand .path16:before {
+  content: "\e94c";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.metafi-hand .path17:before {
+  content: "\e94d";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.metafi-hand .path18:before {
+  content: "\e94e";
+  margin-left: -1em;
+  color: rgb(49, 49, 49);
+}
+.metafi-hand .path19:before {
+  content: "\e94f";
+  margin-left: -1em;
+  color: rgb(50, 50, 51);
+}
+.metafi-hand .path20:before {
+  content: "\e950";
+  margin-left: -1em;
+  color: rgb(48, 48, 49);
+}
+.metafi-hand .path21:before {
+  content: "\e951";
+  margin-left: -1em;
+  color: rgb(50, 50, 50);
+}
+.metafi-hand .path22:before {
+  content: "\e952";
+  margin-left: -1em;
+  color: rgb(49, 49, 49);
+}
+.metafi-hand .path23:before {
+  content: "\e953";
+  margin-left: -1em;
+  color: rgb(65, 65, 65);
+}
+.metafi-hand .path24:before {
+  content: "\e954";
+  margin-left: -1em;
+  color: rgb(55, 55, 55);
+}
+.metafi-hand .path25:before {
+  content: "\e955";
+  margin-left: -1em;
+  color: rgb(58, 58, 60);
+}
+.metafi-hand .path26:before {
+  content: "\e956";
+  margin-left: -1em;
+  color: rgb(49, 49, 50);
+}
+.metafi-hand .path27:before {
+  content: "\e957";
+  margin-left: -1em;
+  color: rgb(49, 49, 49);
+}
+.metafi-hand .path28:before {
+  content: "\e958";
+  margin-left: -1em;
+  color: rgb(62, 62, 64);
+}
+.metafi-hand .path29:before {
+  content: "\e959";
+  margin-left: -1em;
+  color: rgb(50, 50, 51);
+}
+.metafi-hand .path30:before {
+  content: "\e95a";
+  margin-left: -1em;
+  color: rgb(53, 53, 53);
+}
+.metafi-hand .path31:before {
+  content: "\e95b";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.metafi-hand .path32:before {
+  content: "\e95c";
+  margin-left: -1em;
+  color: rgb(51, 51, 53);
+}
+.metafi-hand .path33:before {
+  content: "\e95d";
+  margin-left: -1em;
+  color: rgb(51, 51, 51);
+}
+.metafi-hand .path34:before {
+  content: "\e95e";
+  margin-left: -1em;
+  color: rgb(51, 51, 53);
+}
+.metafi-hand .path35:before {
+  content: "\e95f";
+  margin-left: -1em;
+  color: rgb(88, 88, 90);
+}
+.metafi-hand .path36:before {
+  content: "\e960";
+  margin-left: -1em;
+  color: rgb(51, 51, 53);
+}
+.metafi-hand .path37:before {
+  content: "\e961";
+  margin-left: -1em;
+  color: rgb(51, 51, 52);
+}
+.metafi-hand .path38:before {
+  content: "\e962";
+  margin-left: -1em;
+  color: rgb(52, 52, 54);
+}
+.metafi-hand .path39:before {
+  content: "\e963";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.metafi-hand .path40:before {
+  content: "\e964";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.metafi-hand .path41:before {
+  content: "\e965";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.metafi-hand .path42:before {
+  content: "\e966";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.metafi-hand .path43:before {
+  content: "\e967";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.metafi-hand .path44:before {
+  content: "\e968";
+  margin-left: -1em;
+  color: rgb(48, 48, 50);
+}
+.metafi-hand .path45:before {
+  content: "\e969";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.metafi-hand .path46:before {
+  content: "\e96a";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.metafi-heart-plus:before {
+  content: "\e96b";
+}
+.metafi-heart:before {
+  content: "\e96c";
+}
+.metafi-hero-shard:before {
+  content: "\e96d";
+}
+.metafi-hero:before {
+  content: "\e96e";
+}
+.metafi-home:before {
+  content: "\e96f";
+  color: #d0d2d6;
+}
+.metafi-icon-metafi:before {
+  content: "\e970";
+  color: #0d6efd;
+}
+.metafi-idea:before {
+  content: "\e971";
+}
+.metafi-indivi:before {
+  content: "\e972";
+}
+.metafi-info:before {
+  content: "\e973";
+}
+.metafi-introduce:before {
+  content: "\e974";
+  color: #9c9fa9;
+}
+.metafi-items:before {
+  content: "\e975";
+}
+.metafi-land:before {
+  content: "\e976";
+}
+.metafi-lending:before {
+  content: "\e977";
+}
+.metafi-level-16:before {
+  content: "\e978";
+}
+.metafi-like:before {
+  content: "\e979";
+}
+.metafi-loan:before {
+  content: "\e97a";
+}
+.metafi-logout:before {
+  content: "\e97b";
+  color: #9c9fa9;
+}
+.metafi-loyalty-rounded:before {
+  content: "\e97c";
+}
+.metafi-mac-os:before {
+  content: "\e97d";
+}
+.metafi-menu:before {
+  content: "\e97e";
+}
+.metafi-metaverse:before {
+  content: "\e97f";
+}
+.metafi-money:before {
+  content: "\e980";
+}
+.metafi-more-vertical:before {
+  content: "\e981";
+}
+.metafi-music:before {
+  content: "\e982";
+}
+.metafi-mystery:before {
+  content: "\e983";
+}
+.metafi-navi16:before {
+  content: "\e984";
+}
+.metafi-network:before {
+  content: "\e985";
+}
+.metafi-news:before {
+  content: "\e986";
+}
+.metafi-night:before {
+  content: "\e987";
+}
+.metafi-partner:before {
+  content: "\e988";
+}
+.metafi-parts:before {
+  content: "\e989";
+}
+.metafi-pay:before {
+  content: "\e98a";
+}
+.metafi-pet:before {
+  content: "\e98b";
+}
+.metafi-productions:before {
+  content: "\e98c";
+}
+.metafi-productions1:before {
+  content: "\e98d";
+}
+.metafi-rarity:before {
+  content: "\e98e";
+}
+.metafi-real-estate:before {
+  content: "\e98f";
+}
+.metafi-Receive:before {
+  content: "\e990";
+}
+.metafi-recharge:before {
+  content: "\e991";
+}
+.metafi-rent:before {
+  content: "\e992";
+}
+.metafi-renting:before {
+  content: "\e993";
+}
+.metafi-reward:before {
+  content: "\e994";
+}
+.metafi-rocket:before {
+  content: "\e995";
+}
+.metafi-sale:before {
+  content: "\e996";
+}
+.metafi-sale-1:before {
+  content: "\e997";
+}
+.metafi-search:before {
+  content: "\e998";
+}
+.metafi-sell:before {
+  content: "\e999";
+}
+.metafi-send:before {
+  content: "\e99a";
+}
+.metafi-send-1:before {
+  content: "\e99b";
+}
+.metafi-service:before {
+  content: "\e99c";
+}
+.metafi-setting:before {
+  content: "\e99d";
+}
+.metafi-share:before {
+  content: "\e99e";
+}
+.metafi-sheild:before {
+  content: "\e99f";
+}
+.metafi-shopping:before {
+  content: "\e9a0";
+}
+.metafi-staking:before {
+  content: "\e9a1";
+}
+.metafi-star:before {
+  content: "\e9a2";
+}
+.metafi-status:before {
+  content: "\e9a3";
+}
+.metafi-support:before {
+  content: "\e9a4";
+}
+.metafi-swap:before {
+  content: "\e9a5";
+}
+.metafi-sword:before {
+  content: "\e9a6";
+}
+.metafi-team:before {
+  content: "\e9a7";
+}
+.metafi-termsOfUse:before {
+  content: "\e9a8";
+  color: #9c9fa9;
+}
+.metafi-tiktok:before {
+  content: "\e9a9";
+}
+.metafi-timer:before {
+  content: "\e9aa";
+}
+.metafi-token:before {
+  content: "\e9ab";
+}
+.metafi-topup:before {
+  content: "\e9ac";
+}
+.metafi-thunder:before {
+  content: "\e9ae";
+}
+.metafi-transform:before {
+  content: "\e9af";
+}
+.metafi-transform-1:before {
+  content: "\e9b0";
+}
+.metafi-upgrade:before {
+  content: "\e9b1";
+}
+.metafi-UsagePolicy:before {
+  content: "\e9b2";
+  color: #9c9fa9;
+}
+.metafi-view:before {
+  content: "\e9b3";
+}
+.metafi-wallet:before {
+  content: "\e9b4";
+}
+.metafi-water-16:before {
+  content: "\e9b5";
+}
+.metafi-win8:before {
+  content: "\e9b6";
+}
+.metafi-withdrawal:before {
+  content: "\e9b7";
+}
+.metafi-activity:before {
+  content: "\e9b8";
+}
