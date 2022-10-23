@@ -3427,6 +3427,13 @@
     changeCarousel(event.data);
   }
 
+  function onPlayerStateChange(event) {
+    if (event.data === 1) {
+    } else {
+      onPlayerReady(event)
+    }
+  }
+
   function onPlayerReady(event) {
     event.target.mute();
     event.target.playVideo();
@@ -3454,14 +3461,14 @@ function jumpto(anchor){
     });
   }
 
-  function onVisibilityChange() {
-    if (document.visibilityState === 'visible') {
-      window.location.replace(window.location.href);
-    } else {
-    }
-  }
-
-  document.addEventListener('visibilitychange', onVisibilityChange);
+  // function onVisibilityChange() {
+  //   if (document.visibilityState === 'visible') {
+  //     window.location.replace(window.location.href);
+  //   } else {
+  //   }
+  // }
+  //
+  // document.addEventListener('visibilitychange', onVisibilityChange);
 
 </script>
 

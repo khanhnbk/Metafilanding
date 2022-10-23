@@ -168,7 +168,8 @@ player = new YT.Player('video-background', {
     playerVars: { playlist: 'eRLcPVSqByQ',
         loop: 1, 'autoplay': 1, 'playsinline': 1,'controls': 1 },
     events: {
-        'onReady': onPlayerReady
+        'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange
     }
 });
 }
