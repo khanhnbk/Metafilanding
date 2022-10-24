@@ -1961,7 +1961,9 @@ z-index: 200;
   padding: 10px 30px 20px 30px;
   margin: 0;
 }
-
+.vd-lr-cvl{
+  padding-left: 0
+}
 .dao .bx-ct-dao{
 display: flex;
 flex-wrap: wrap;
@@ -3350,9 +3352,6 @@ body {
 /**section 7**/
 .lr-ct-sec6>.item-lr-sec6>.icon-item{
   min-width: 160px;
-}
-.vd-lr-cvl{
-  padding-left: 0
 }
 .lr-ct-sec6{
   padding-right: calc(var(--bs-gutter-x) * 1);
