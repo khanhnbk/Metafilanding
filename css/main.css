@@ -142,7 +142,7 @@ p{
   padding: 0;
 }
 body{
-  background-image:  url(../images/bg.png);
+  /* background-image:  url(../images/bg.png); */
   background-color: #161D31;
   background-size: cover;
   background-repeat: no-repeat;
