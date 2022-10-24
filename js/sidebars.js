@@ -215,25 +215,25 @@ var swiper = new Swiper('.swiper-container', {
   },
 });
 
-window.addEventListener('resize', resize, false);
+// window.addEventListener('resize', resize, false);
 
-myVideo.height = 100; /* to get an initial width to work with*/
-resize();
+// myVideo.height = 100; /* to get an initial width to work with*/
+// resize();
 
-function resize() {
-videoRatio = myVideo.height / myVideo.width;
-windowRatio = window.innerHeight / window.innerWidth; /* browser size */
+// function resize() {
+// videoRatio = myVideo.height / myVideo.width;
+// windowRatio = window.innerHeight / window.innerWidth; /* browser size */
 
-    if (windowRatio < videoRatio) {
-        if (window.innerHeight > 50) { /* smallest video height */
-                myVideo.height = window.innerHeight;
-        } else {
-          myVideo.height = 50;
-    }
-    } else {
-      myVideo.width = window.innerWidth;
-    }
+//     if (windowRatio < videoRatio) {
+//         if (window.innerHeight > 50) { /* smallest video height */
+//                 myVideo.height = window.innerHeight;
+//         } else {
+//           myVideo.height = 50;
+//     }
+//     } else {
+//       myVideo.width = window.innerWidth;
+//     }
 
-};
+// };
 
 
