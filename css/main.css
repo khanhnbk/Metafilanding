@@ -1054,6 +1054,16 @@ transform: scale(1.1);
 -o-transform: scale(1.1);
 }
 
+.video-foreground{
+  
+  background-image: url(../images/avtar-video.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
 .video-foreground[data-v-1ac287b5]{
   background-image: url(../images/avtar-video.png);
   background-repeat: no-repeat;
@@ -3192,7 +3202,7 @@ min-height: 159px;
 
 /**section 5**/
 #slideAlgric>.carousel-inner{
-min-height: 352px;
+min-height: 453px;
 }
 
 .bx-ct .ngoclinhGinseng .ct-ginseng .lt-ct{
@@ -3200,9 +3210,6 @@ min-height: 352px;
 }
 .carousel-indicators.slide-thumb-sec4{
   padding-top: 40px;
-}
-#slideAlgric>.carousel-inner{
-  min-height: 450px;
 }
 .video-ginseng-sc5 {
   min-height: 400px;
@@ -3406,6 +3413,10 @@ min-height: 212px;
   .ct-item-ginseng-lf{
     min-height: 670px;
   }
+  
+#slideAlgric>.carousel-inner{
+  min-height: 453px;
+}
 /**section 15**/
 .btn-pre{
   left: 10px;
