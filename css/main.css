@@ -142,7 +142,7 @@ p{
   padding: 0;
 }
 body{
-  background-image:  url(../images/bg.png);
+  /* background-image:  url(../images/bg.png); */
   background-color: #161D31;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1056,8 +1056,9 @@ transform: scale(1.1);
 
 .video-foreground{
   
-  background-image: url(../images/avtar-video.png);
+  background-image: url(../images/avtar-video.jpg);
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   text-align: center;
   margin: 0 auto;
@@ -1065,8 +1066,9 @@ transform: scale(1.1);
   justify-content: center;
 }
 .video-foreground[data-v-1ac287b5]{
-  background-image: url(../images/avtar-video.png);
+  background-image: url(../images/avtar-video.jpg);
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   text-align: center;
   margin: 0 auto;
@@ -1550,17 +1552,14 @@ position: relative;
 }
 .bx-platform-6{
 position: relative;
-} .bx-meta-go-sys, .meta-wallet-sys, .meta-maketplace-sys{
-min-height: 299px;
+} .bx-meta-go-sys, .meta-maketplace-sys{
+min-height: 245px;
 }
 .bx-digital{
 min-height: 246px
 }
 .bx-web-gaming{
 min-height:246px
-}
-.bx-ct .bx-ct-pl-md-5{
-padding-bottom: 30px;
 }
 .t-w-900{
   font-weight: 900;
@@ -1819,6 +1818,9 @@ transform: scale(1);
 .ct-sec-6{
   width: 100%;
 }
+.ct-overview{
+  padding-right: 0;
+}
 .lr-ct-sec6{
   display: flex;
   flex-direction: column;
@@ -1945,6 +1947,9 @@ color: var(--White);
 }
 .modal-backdrop{
 z-index: 200;
+}
+.bx-vd-mf{
+  padding-left: 0;
 }
 
 /**section 7**/
@@ -3130,22 +3135,6 @@ font-size: 0.7rem!important;
 .ct-market-lf {
   min-height: 134px;
 }
-.bx-meta-id-sys,
-.bx-digital, 
-.bx-web-gaming {
-min-height: 297px;
-}
-.bx-meta-go-sys, .meta-wallet-sys, .meta-maketplace-sys {
-min-height: 347px;
-}
-.bx-platform-3 {
-}
-.bx-platform-4 {
-}
-.bx-platform-6{
-}
-.bx-platform-5 {
-}
 
 .bgBox[data-v-1ac287b5] {
 position: relative;
@@ -3198,10 +3187,9 @@ min-height: 159px;
 .ct-sec-img{
   text-align: center;
 }
-.ct-sec-img img{
-  width: 65%;
+.bx-meta-go-sys, .meta-maketplace-sys {
+  min-height: 241px;
 }
-
 /**section 5**/
 #slideAlgric>.carousel-inner{
 min-height: 453px;
@@ -3265,20 +3253,6 @@ body {
 .bx-ct .bx-ct-middle{
   padding: 0 30px;
 }
-.ct-sec-img img{
-  width: 100%;
-}
-/* .bx-digital{
-  min-height: 309px;
-}
-.bx-meta-id-sys {
-  min-height: 309px;
-} */
-.bx-meta-go-sys, .meta-wallet-sys, .meta-maketplace-sys {
-  min-height: 318px;
-}
-.bx-platform-1{
-}
 .bx-platform-2 {
   position: relative;
 }
@@ -3304,9 +3278,7 @@ body {
 .ct-bx-f {
   padding: 10px 30px 40px 30px;
 }
-.bx-meta-id-sys{
-  min-height: 296px;
-}
+
 /**section 4**/
 .ct-poten, .potenti{
   min-height: auto;
@@ -3406,13 +3378,22 @@ min-height: 212px;
                     only screen and (-o-min-device-pixel-ratio: 2/1),
                     only screen and (min-device-pixel-ratio: 2)
 {
+  .ct-sec-img img {
+    width: 65%;
+}
   .ct-poten, .potenti{
     min-height: 204px;
   }
   .ct-item-ginseng-lf{
     min-height: 670px;
   }
-  
+  .meta-wallet-sys {
+    min-height: auto;
+  }
+  .bx-meta-go-sys,
+  .meta-maketplace-sys{
+    min-height: 268px;
+  }
 #slideAlgric>.carousel-inner{
   min-height: 453px;
 }
@@ -3422,6 +3403,9 @@ min-height: 212px;
 }
 .btn-next{
   right: 10px;
+}
+.content[data-v-1ac287b5]{
+  padding-top: 20%;
 }
  }
 @media only screen and (min-device-width: 992px)
@@ -3949,7 +3933,7 @@ body.block-end:not(.an-menu_mobile) .container-right,
 
 @media only screen and (max-width: 575.98px) {
 body {
-  background-image:  url(../images/mobile-bg.jpg);
+  /* background-image:  url(../images/mobile-bg.jpg); */
   background-repeat: no-repeat;
   background-color: #1E263D;
   background-size: cover;

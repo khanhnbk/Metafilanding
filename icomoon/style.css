@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'metafi';
-  src:  url('fonts/metafi.eot?21qqhm');
-  src:  url('fonts/metafi.eot?21qqhm#iefix') format('embedded-opentype'),
-    url('fonts/metafi.ttf?21qqhm') format('truetype'),
-    url('fonts/metafi.woff?21qqhm') format('woff'),
-    url('fonts/metafi.svg?21qqhm#metafi') format('svg');
+  src:  url('fonts/metafi.eot?dyp51');
+  src:  url('fonts/metafi.eot?dyp51#iefix') format('embedded-opentype'),
+    url('fonts/metafi.ttf?dyp51') format('truetype'),
+    url('fonts/metafi.woff?dyp51') format('woff'),
+    url('fonts/metafi.svg?dyp51#metafi') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -74,6 +74,9 @@
 .metafi-wallet2:before {
   content: "\e9b9";
 }
+.metafi-circle:before {
+  content: "\e916";
+}
 .metafi-about:before {
   content: "\e900";
 }
@@ -139,9 +142,6 @@
 }
 .metafi-cash:before {
   content: "\e915";
-}
-.metafi-circle:before {
-  content: "\e916";
 }
 .metafi-coinMetafi:before {
   content: "\e917";

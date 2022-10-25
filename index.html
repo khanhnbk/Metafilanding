@@ -182,12 +182,26 @@
           <span>Insights</span>
         </button>
       </li>
-      <li class="mb-1 menu-expanded" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right"
-          title="Coming soon">
-        <button class="btn align-items-center rounded disabled">
+      <li class="mb-1 menu-expanded" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" title="Coming soon">
+        <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+        data-bs-target="#gameHub-nd-collapse" aria-expanded="false" >
           <i class="metafi-game" aria-hidden="true"></i>
           <span>Game Hub</span>
         </button>
+        <div class="collapse" id="gameHub-nd-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 list-sub-collapse">
+            <li><a href="#" class="link-dark rounded item-sub-collapse">
+              <i class="metafi-circle" aria-hidden="true"></i>All Game</a></li>
+            <li><a href="#" class="link-dark rounded item-sub-collapse">
+              <i class="metafi-circle" aria-hidden="true"></i>Infinity War</a></li>
+            <li><a href="#" class="link-dark rounded item-sub-collapse">
+              <i class="metafi-circle" aria-hidden="true"></i>Immortal Warriors</a></li>
+            <li><a href="#" class="link-dark rounded item-sub-collapse">
+              <i class="metafi-circle" aria-hidden="true"></i>Realms Of Galaxy</a></li>
+              <li><a href="#" class="link-dark rounded item-sub-collapse">
+                <i class="metafi-circle" aria-hidden="true"></i>Space Alpha</a></li>
+          </ul>
+        </div>
       </li>
       <li class="mb-1 menu-expanded" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right"
           title="Coming soon">
@@ -289,7 +303,7 @@
       </li>
       <li class="mb-1 menu-expanded" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right"
           title="Coming soon">
-        <button class="btn btn-toggle align-items-center rounded disabled" data-bs-toggle="collapse"
+        <button class="btn btn-toggle align-items-center rounded " data-bs-toggle="collapse"
                 data-bs-target="#orders-nd-collapse" aria-expanded="false">
           <i class="metafi-idea" aria-hidden="true"></i>
           <span>Solutions</span>
@@ -455,7 +469,7 @@
       </div>
     </section>
 
-    <section name="about" class="section-2">
+    <section id="about" class="section-2">
       <div class="tit-group">
         <h2 class="text-uppercase">WHAT IS METAFI ?</h2>
       </div>
@@ -677,7 +691,7 @@
                         </h1>
                         <small>(Fiat & Crypto - Multichain)</small>
                       </div>
-                      <div class="bx-ct-middle bx-ct-pl-md-5">
+                      <div class="bx-ct-middle">
                         <div class="lt-ct">
                           <p class="sub-sec3-txt"><span style="font-weight: 700;">MetaFi Fintech</span> (Wallets,
                             Loyalty, Asset Management, Financial Services): A system that helps investors manage, buy,
@@ -1375,7 +1389,7 @@
                       <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="use-case-1" role="tabpanel"
                              aria-labelledby="pills-case-1">
-                          <div class="bx-tt-ct ct-use-case">
+                          <div class="bx-tt-ct ct-use-case bx-vd-mf">
                             <div id="slideAvatar" class="carousel slide" data-bs-ride="carousel">
                               <div class="carousel-inner">
                                 <div class="carousel-item slide active">
@@ -2381,7 +2395,7 @@
     <section class="section-11">
       <div class="tit-group">
         <h2 class="text-uppercase">launching project</h2>
-        <h4><a style="color: #FFF;" target="_blank" href="http://MyMasterWar.com">MyMasterWar.com</a> (MMW) </h4>
+        <h4><a style="color: #FFF;" target="_blank" href="http://MyMasterWar.com">MyMasterWar.com</a> (MMW) x MetaFi </h4>
       </div>
       <div class="ct-sec10">
         <div class="container">
@@ -3232,7 +3246,7 @@
         </div>
       </div>
     </section>
-    <div name="contact" class="container">
+    <div id="contact" class="container">
       <div class="row align-items-center">
         <div class="col align-items-center">
           <div class="tit-group">
