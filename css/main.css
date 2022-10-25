@@ -3380,9 +3380,6 @@ min-height: 212px;
                     only screen and (-o-min-device-pixel-ratio: 2/1),
                     only screen and (min-device-pixel-ratio: 2)
 {
-  .ct-sec-img img {
-    width: 65%;
-}
   .ct-poten, .potenti{
     min-height: 204px;
   }
