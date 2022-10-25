@@ -182,12 +182,26 @@
           <span>Insights</span>
         </button>
       </li>
-      <li class="mb-1 menu-expanded" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right"
-          title="Coming soon">
-        <button class="btn align-items-center rounded disabled">
+      <li class="mb-1 menu-expanded" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" title="Coming soon">
+        <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+        data-bs-target="#gameHub-nd-collapse" aria-expanded="false" >
           <i class="metafi-game" aria-hidden="true"></i>
           <span>Game Hub</span>
         </button>
+        <div class="collapse" id="gameHub-nd-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 list-sub-collapse">
+            <li><a href="#" class="link-dark rounded item-sub-collapse">
+              <i class="metafi-circle" aria-hidden="true"></i>All Game</a></li>
+            <li><a href="#" class="link-dark rounded item-sub-collapse">
+              <i class="metafi-circle" aria-hidden="true"></i>Infinity War</a></li>
+            <li><a href="#" class="link-dark rounded item-sub-collapse">
+              <i class="metafi-circle" aria-hidden="true"></i>Immortal Warriors</a></li>
+            <li><a href="#" class="link-dark rounded item-sub-collapse">
+              <i class="metafi-circle" aria-hidden="true"></i>Realms Of Galaxy</a></li>
+              <li><a href="#" class="link-dark rounded item-sub-collapse">
+                <i class="metafi-circle" aria-hidden="true"></i>Space Alpha</a></li>
+          </ul>
+        </div>
       </li>
       <li class="mb-1 menu-expanded" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right"
           title="Coming soon">
@@ -289,7 +303,7 @@
       </li>
       <li class="mb-1 menu-expanded" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right"
           title="Coming soon">
-        <button class="btn btn-toggle align-items-center rounded disabled" data-bs-toggle="collapse"
+        <button class="btn btn-toggle align-items-center rounded " data-bs-toggle="collapse"
                 data-bs-target="#orders-nd-collapse" aria-expanded="false">
           <i class="metafi-idea" aria-hidden="true"></i>
           <span>Solutions</span>
