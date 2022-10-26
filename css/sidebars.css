@@ -165,9 +165,6 @@ li.title-li {
 .menu-hide .container-right {
   margin-left: 130px !important;
 }
-.menu-hide .menu-left2 li .btn i, .menu-hide .btn-toggle-nav a i {
-    font-size: 2rem;
-}
 
 ul.list-sub-collapse>li>a.item-sub-collapse>i{
   font-size: 24px!important;
@@ -379,6 +376,16 @@ and (-webkit-min-device-pixel-ratio: 1) {
     width: 100px!important;
   }
 }
+@media screen and (min-device-width: 1200px) 
+and (max-device-width: 1600px) 
+and (-webkit-min-device-pixel-ratio: 2) 
+and (min-resolution: 192dpi) {
+  
+  .menu-hide .btn-toggle-nav a span {
+    font-size: .8rem;
+}
+
+}
 .menu-left2 .menu-left3 {
   left: 130px;
   position: fixed;
@@ -394,9 +401,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
                     only screen and (-o-min-device-pixel-ratio: 2/1),
                     only screen and (min-device-pixel-ratio: 2)
 {
-  
-  .menu-hide .container-right {
-    margin-left: 124px!important;
+  .menu-hide .btn-toggle-nav a span {
+    font-size: .9rem;
 }
  }
 @media only screen and (max-width: 768px) {

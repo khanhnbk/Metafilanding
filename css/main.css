@@ -687,7 +687,7 @@ a.navbar-brand {
   width: 100%;
 }
 .menu-left2 .list-unstyled .menu-expanded span {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 button:focus {
@@ -3361,7 +3361,7 @@ min-height: 212px;
     min-height: 268px;
   }
 #slideAlgric>.carousel-inner{
-  min-height: 453px;
+  min-height: 463px;
 }
 /**section 15**/
 .btn-pre{
