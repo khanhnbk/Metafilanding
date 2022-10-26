@@ -1054,39 +1054,33 @@ transform: scale(1.1);
 -o-transform: scale(1.1);
 }
 
-.video-foreground{
-  
-  background-image: url(../images/avtar-video.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  text-align: center;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
 .video-foreground[data-v-1ac287b5]{
-  background-image: url(../images/avtar-video.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  text-align: center;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  top: 0; right: 0; bottom: 0; left: 0;
+  position: fixed;
 }
-.video-foreground,
-.video-background iframe {
+.video-foreground[data-v-1ac287b5],
+.video-background[data-v-1ac287b5] iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 106%;
   pointer-events: none;
-  object-fit: cover;
-  margin: 0 auto;
 }
 
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground[data-v-1ac287b5] {
+    height: 300%;
+    top: -100%;
+}
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground[data-v-1ac287b5] {
+    width: 300%;
+    left: -100%;
+  }
+}
 .appinfo[data-v-1ac287b5]{
 display: flex;
 flex-direction: column;
@@ -3076,32 +3070,6 @@ span.titile-timeline {
     border-top: 15px solid #9E7AC5;
 }
 
-@media (min-aspect-ratio: 16/9) {
-  .video-foreground {
-    height: 300%;
-    top: -100%;
-  }
-}
-@media (max-aspect-ratio: 16/9) {
-  .video-foreground {
-    width: 300%;
-    left: -100%;
-  }
-}
-@media all and (max-width: 600px) {
-  .vid-info {
-    width: 50%;
-    padding: 0.5rem;
-  }
-  .vid-info h1 {
-    margin-bottom: 0.2rem;
-  }
-}
-@media all and (max-width: 500px) {
-  .vid-info .acronym {
-    display: none;
-  }
-}
 
 /* ----------- Non-Retina Screens ----------- */
 @media screen and (min-device-width: 1200px) 
@@ -3111,9 +3079,6 @@ body {
   font-size: 12px;
 }
 
-.menu-left2 li .btn, .btn-toggle-nav a {
-font-size: 0.7rem!important;
-}
 .menutop.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top{
   padding-left: 0;
   padding-right: 0;
@@ -3149,7 +3114,6 @@ margin: 0;
 
 .bgBox .video[data-v-1ac287b5] {
 width: 100%;
-height: auto;
 margin-top: 0;
 }
 
@@ -3160,7 +3124,7 @@ height: 80vh;
 object-fit: cover
 }
 .content .littleBtn[data-v-1ac287b5]{
-padding: 1% 0 16%;
+padding: 1% 0 13%;
 }
 
 .tt-advisors p, .tt-hubsboard p {
@@ -3188,6 +3152,9 @@ min-height: 159px;
 
 .ct-sec-img{
   text-align: center;
+}
+.ct-sec-img img{
+  width: 65%;
 }
 .bx-meta-go-sys, .meta-maketplace-sys {
   min-height: 241px;
@@ -3404,7 +3371,7 @@ min-height: 212px;
   right: 10px;
 }
 .content[data-v-1ac287b5]{
-  padding-top: 20%;
+  padding-top: 16%;
 }
  }
 @media only screen and (min-device-width: 992px)
