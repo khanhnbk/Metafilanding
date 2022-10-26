@@ -378,9 +378,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
   .menu-hide .menu-left2{
     width: 100px!important;
   }
-  .menu-hide .menu-left2 li .btn i, .menu-hide .btn-toggle-nav a i {
-    font-size: 1.2rem;
-}
 }
 .menu-left2 .menu-left3 {
   left: 130px;
