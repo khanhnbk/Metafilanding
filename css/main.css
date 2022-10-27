@@ -143,6 +143,7 @@ to {
   align-items: center;
   position: fixed;
   right: 10px;
+  bottom: -100px;
   z-index: 1000;
   transition: all 0.6s ease;
   -webkit-transition: all 0.6s ease;
@@ -159,6 +160,15 @@ to {
 .backToTop a.btnBackToTop i{
   font-size: 32px;
   color: #fff;
+}
+.bottom-top{
+  bottom: 100px;
+}
+.navbarfixed {
+  bottom: -100px;
+}
+.navbarNfixed {
+  bottom: 100px;
 }
 p{
   margin: 0;
