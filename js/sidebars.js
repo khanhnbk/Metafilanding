@@ -162,24 +162,33 @@ $('.p_slider__item img').mouseout(function(){
     rotateLeft()
   },3000)
 })
-// document.addEventListener('scroll', function(e) {reveal()}, true);
-// function reveal() {
+//  document.addEventListener('scroll', function(e) {reveal()}, true);
+//  function reveal() {
 
-//   var reveals = document.querySelectorAll(".reveal-show");
+//    var reveals = document.querySelectorAll(".reveal-show");
 
-//   for (var i = 0; i < reveals.length; i++) {
-//     var windowHeight = window.innerHeight;
-//     var revealtop = reveals[i].getBoundingClientRect().top;
-//     // var revwalpoint = 50;
-//     if (revealtop < windowHeight) {
-//       reveals[i].classList.add("active-show");
-//     } 
-//     else {
-//     reveals[i].classList.remove("active-show");
-//     }
-//   }
-// };
+//    for (var i = 0; i < reveals.length; i++) {
+//      var windowHeight = window.innerHeight;
+//      var revealtop = reveals[i].getBoundingClientRect().top;
+//      // var revwalpoint = 50;
+//      if (revealtop < windowHeight) {
+//        reveals[i].classList.add("active-show");
+//      } 
+//      else {
+//      reveals[i].classList.remove("active-show");
+//      }
+//    }
+//  };
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("btnScroll").style.bottom = "15px";
+  } else {
+    document.getElementById("btnScroll").style.bottom = "-100px";
+  }
+}
 
 
 var swiper = new Swiper('.swiper-container', {
