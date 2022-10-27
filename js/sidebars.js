@@ -162,34 +162,55 @@ $('.p_slider__item img').mouseout(function(){
     rotateLeft()
   },3000)
 })
-//  document.addEventListener('scroll', function(e) {reveal()}, true);
-//  function reveal() {
+// document.addEventListener('scroll', function(e) {reveal()}, true);
+// function reveal() {
 
-//    var reveals = document.querySelectorAll(".reveal-show");
+//   var reveals = document.querySelectorAll(".reveal-show");
 
-//    for (var i = 0; i < reveals.length; i++) {
-//      var windowHeight = window.innerHeight;
-//      var revealtop = reveals[i].getBoundingClientRect().top;
-//      // var revwalpoint = 50;
-//      if (revealtop < windowHeight) {
-//        reveals[i].classList.add("active-show");
-//      } 
-//      else {
-//      reveals[i].classList.remove("active-show");
-//      }
+//   for (var i = 0; i < reveals.length; i++) {
+//     var windowHeight = window.innerHeight;
+//     var revealtop = reveals[i].getBoundingClientRect().top;
+//     // var revwalpoint = 50;
+//     if (revealtop < windowHeight) {
+//       reveals[i].classList.add("active-show");
+//     } 
+//     else {
+//     reveals[i].classList.remove("active-show");
+//     }
+//   }
+// };
+
+// window.onscroll = function () {scrollFunction()};
+//  function scrollFunction() {
+//    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//      document.getElementById("btnScroll").style.bottom = "100px";
+//    } else {
+//      document.getElementById("btnScroll").style.bottom = "-100px";
 //    }
 //  };
 
-window.onscroll = function() {scrollFunction()};
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+// window.onscroll = function () { scrollFunction() };
+// function scrollFunction() {
+//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//         document.getElementById("btnScroll").classList.remove("navbarfixed");
+//         document.getElementById("btnScroll").classList.add("navbarNfixed");
+//     } else {
+//         document.getElementById("btnScroll").classList.remove("navbarNfixed");
+//         document.getElementById("btnScroll").classList.add("navbarfixed");
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("btnScroll").style.bottom = "15px";
-  } else {
+//     }
+// };
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
     document.getElementById("btnScroll").style.bottom = "-100px";
+  } else {
+    document.getElementById("btnScroll").style.bottom = "100px";
   }
+  prevScrollpos = currentScrollPos;
 }
-
 
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 3,
