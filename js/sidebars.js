@@ -213,7 +213,7 @@ $('.p_slider__item img').mouseout(function(){
 //  prevScrollpos = currentScrollPos;
 //}
 
-window.addEvenListener ('scroll', () => {
+document.addEvenListener ('scroll', () => {
   const scrollable = document.documentElement.scrollHeight - window.innerHeight;
   const scroller = window.scrollY.getBoundingClientRect().top;
   if (scrollable > scroller) {
