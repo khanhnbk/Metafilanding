@@ -215,7 +215,7 @@ $('.p_slider__item img').mouseout(function(){
 
 window.addEvenListener ('scroll', () => {
   const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-  const scroller = window.scrollY;
+  const scroller = window.scrollY.getBoundingClientRect().top;
   if (scrollable > scroller) {
     document.getElementById("btnScroll").style.bottom = "-100px";
   } else {
