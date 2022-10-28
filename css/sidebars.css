@@ -370,7 +370,7 @@ ul.list-sub-collapse>li>a.item-sub-collapse>i{
 and (max-device-width: 1600px) 
 and (-webkit-min-device-pixel-ratio: 1) {
   .menu-hide .container-right {
-    margin-left: 100px!important;
+    margin-left: 122px!important;
 }
   .menu-hide .menu-left2{
     width: 100px!important;
