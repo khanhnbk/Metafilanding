@@ -214,9 +214,9 @@ $('.p_slider__item img').mouseout(function(){
 //}
 
 document.addEvenListener ('scroll', () => {
-  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-  const scroller = window.scrollY;
-  if (scrollable === scroller) {
+  const scrollable = window.innerHeight;
+  const scroller = getBoundingClientRect().top;
+  if (scrollable > scroller) {
     document.getElementById("btnScroll").style.bottom = "-100px";
   } else {
     document.getElementById("btnScroll").style.bottom = "100px";
