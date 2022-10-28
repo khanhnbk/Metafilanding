@@ -201,16 +201,28 @@ $('.p_slider__item img').mouseout(function(){
 
 //     }
 // };
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
+
+//var prevScrollpos = window.pageYOffset;
+//window.onscroll = function() {
+//var currentScrollPos = window.pageYOffset;
+//  if (prevScrollpos > currentScrollPos) {
+//    document.getElementById("btnScroll").style.bottom = "-100px";
+//  } else {
+//    document.getElementById("btnScroll").style.bottom = "100px";
+//  }
+//  prevScrollpos = currentScrollPos;
+//}
+
+window.addEvenListener ('scroll', () => {
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+  const scroller = window.scrollY;
+  if (scrollable > scroller) {
     document.getElementById("btnScroll").style.bottom = "-100px";
   } else {
     document.getElementById("btnScroll").style.bottom = "100px";
   }
-  prevScrollpos = currentScrollPos;
-}
+  scroller = scrollable;
+};
 
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 3,
