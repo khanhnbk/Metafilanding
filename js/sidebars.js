@@ -221,7 +221,6 @@ document.addEvenListener ('scroll', () => {
   } else {
     document.getElementById("btnScroll").style.bottom = "100px";
   }
-  scroller = scrollable;
 };
 
 var swiper = new Swiper('.swiper-container', {
