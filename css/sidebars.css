@@ -380,7 +380,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
 and (max-device-width: 1600px) 
 and (-webkit-min-device-pixel-ratio: 2) 
 and (min-resolution: 192dpi) {
-  
+  .menu-hide .container-right {
+    margin-left: 122px!important;
+}
   .menu-hide .btn-toggle-nav a span {
     font-size: .8rem;
 }
