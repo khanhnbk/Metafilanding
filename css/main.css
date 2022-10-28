@@ -3197,7 +3197,7 @@ min-height: 159px;
   width: 65%;
 }
 .bx-meta-go-sys, .meta-maketplace-sys {
-  min-height: 241px;
+  min-height: 267px;
 }
 /**section 5**/
 #slideAlgric>.carousel-inner{
@@ -3415,6 +3415,48 @@ min-height: 212px;
   padding-top: 16%;
 }
  }
+
+ @media (max-width: 1399.98px) {
+  .menu-hide .container-right {
+    margin-left: 100px!important;
+}
+  .bx-digital,
+  .bx-web-gaming {
+    min-height: 297px;
+  }
+  .bx-meta-go-sys, .meta-maketplace-sys {
+    min-height: 292px;
+  }
+  .ct-digital-lf{
+    min-height: 346px;
+  }
+  #slideAlgric>.carousel-inner{
+    min-height: 400px;
+  }
+  .carousel-indicators.slide-thumb-sec4{
+    padding-top:0;
+  }
+  .bx-ct .ngoclinhGinseng .ct-ginseng .lt-ct{
+    min-height: 117px;
+  }
+  .ct-item-ginseng-lf{
+    min-height: 627px;
+  }
+  .ct-phase-3, .ct-phase-2 {
+    min-height: 534px;
+  }
+  .ct-phase-5 {
+    min-height: 355px;
+}
+  .henRy,
+  .ct-cbdo{
+    min-height: 132px;
+  }
+  .ct-indivi, .ct-busi{
+    min-height: 188px;
+  }
+ }
+
 @media only screen and (min-device-width: 992px)
 and (max-device-width: 1200px)
 {
