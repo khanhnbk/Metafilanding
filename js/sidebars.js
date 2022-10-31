@@ -17,8 +17,9 @@
 // }, false);
 
 window.onload = function () {
-  var openmenuarrow = document.getElementById('btn-menu');
+  // var openmenuarrow = document.getElementById('btn-menu');
   var menu = document.getElementById('navbar-toggle-menu');
+  var menuhv = document.getElementById('menuHv');
   var mainpage = document.getElementById('mainpage');
   var menuX = document.getElementById('menu-x');
   var iconmenu = document.getElementById('icon-menu');
@@ -43,13 +44,14 @@ window.onload = function () {
   }
 
 
-  openmenuarrow.addEventListener('click', xoaclass, false);
+  // openmenuarrow.addEventListener('click', xoaclass, false);
   menu.addEventListener('click', rmclass, false);
-  // menu.addEventListener('mouseout', rmclass, false);
+  menuhv.addEventListener('mouseenter', xoaclass, false);
+  menuhv.addEventListener('mouseleave', xoaclass, false);
   menuX.addEventListener('click', rmclass, false);
   menuX.addEventListener('click', changer, false);
 
-  menu.addEventListener('click', changer, false);
+
 
   // menu.addEventListener('mouseout', changer, false);
 
