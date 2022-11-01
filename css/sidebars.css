@@ -401,6 +401,32 @@ and (min-resolution: 192dpi) {
   display: none;
 }
 
+
+.hovermenu .container-right {
+  margin-left: 0 !important;
+}
+.hovermenu .menu-left2 .arrowLeftfillcircle {
+  transform: rotate(180deg);
+}
+.menu-hide .menu-left2 li .btn i, 
+.menu-hide .btn-toggle-nav a i, 
+.menu-hide .menu-left2 li .btn span, 
+.menu-hide .btn-toggle-nav a span,
+.menu-hide .menu-left2 li .btn, 
+.menu-hide .btn-toggle-nav a,
+.menu-left2 .list-unstyled .menu-expanded,
+.menu-left2 .list-unstyled.scroll,
+.left-logo,
+.left-logo *,
+.menu-left2.fixed-top {
+  transition: all .1s ease-in-out !important;
+}
+.hovermenu .menutop.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top {
+  left: 130px !important;
+}
+.hovermenu .menu-left2.fixed-top {
+  z-index: 9999;
+}
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
                     only screen and (min--moz-device-pixel-ratio: 2),
                     only screen and (-o-min-device-pixel-ratio: 2/1),
@@ -413,5 +439,8 @@ and (min-resolution: 192dpi) {
 @media only screen and (max-width: 768px) {
   .menu-left2 .menu-left3 {
     display: block;
+  }
+  .hovermenu .menutop.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top {
+    left: 0px !important;
   }
 }
