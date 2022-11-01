@@ -741,6 +741,10 @@ button:focus {
 .menu-left2.fixed-top {
   bottom: 0;
   z-index: 1000;
+  position: fixed;
+  height: 100vh;
+  top: 0%;
+  left: 0;
 }
 
 .menu-left2 li .btn,

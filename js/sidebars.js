@@ -17,7 +17,7 @@
 // }, false);
 
 window.onload = function () {
-  // var openmenuarrow = document.getElementById('btn-menu');
+  var openmenuarrow = document.getElementById('btn-menu');
   var menu = document.getElementById('navbar-toggle-menu');
   var menuhv = document.getElementById('menuHv');
   var mainpage = document.getElementById('mainpage');
@@ -44,7 +44,7 @@ window.onload = function () {
   }
 
 
-  // openmenuarrow.addEventListener('click', xoaclass, false);
+  openmenuarrow.addEventListener('click', xoaclass, false);
   menu.addEventListener('click', rmclass, false);
   menuhv.addEventListener('mouseenter', xoaclass, false);
   menuhv.addEventListener('mouseleave', xoaclass, false);
