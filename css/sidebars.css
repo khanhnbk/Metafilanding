@@ -402,9 +402,9 @@ and (min-resolution: 192dpi) {
 }
 
 
-.hovermenu .container-right {
+/* .hovermenu .container-right {
   margin-left: 0 !important;
-}
+} */
 .hovermenu .menu-left2 .arrowLeftfillcircle {
   transform: rotate(180deg);
 }
@@ -444,21 +444,28 @@ and (min-resolution: 192dpi) {
 }
  }
 @media only screen and (max-width: 768px) {
+  .menu-left2.fixed-top{
+    top: 0 !important;
+    overflow: hidden;
+    height: auto !important;
+  }
   .menu-left2 .menu-left3 {
     display: block;
+    left: 280px;
   }
   .hovermenu .menutop.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top {
     left: 0px !important;
   }
-  body#mainpage {
+  body#mainpage.an-menu_mobile {
     max-height: 100vh;
     overflow-y: hidden;
-    display: block;
     overflow-x: hidden;
+    display: block;
   }
 
-  body#mainpage main.block-end {
+  body#mainpage.an-menu_mobile main.block-end {
       overflow-y: auto;
       max-height: 100vh;
   }
+
 }

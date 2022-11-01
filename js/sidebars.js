@@ -16,7 +16,7 @@
 //   document.body.classList.toggle("an-menu_mobile");
 // }, false);
 
-window.onload = function () {
+// window.onload = function () {
   var btnScroll = document.getElementById('btnScroll');
   var mainSctoll = document.querySelector('main');
   var windowTop = mainSctoll.scrollTop;
@@ -68,7 +68,11 @@ window.onload = function () {
   }
  
   function windowTo() {
-    mainSctoll.scrollTo(0,0);
+    // mainSctoll.scrollTo(0,0);
+    mainSctoll.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
   }
   function windowTopfun() {
     if(mainSctoll.scrollTop > 80 &&  mainSctoll.scrollTop - windowTop > 0){
@@ -79,25 +83,19 @@ window.onload = function () {
         windowTop = mainSctoll.scrollTop;
     }
   };
-
-mainSctoll.addEventListener('scroll', function(e) {windowTopfun()}, false);
-btnScroll.addEventListener('click', windowTo, false);
+  mainSctoll.addEventListener('scroll', function(e) {windowTopfun()}, false);
+  btnScroll.addEventListener('click', windowTo, false);
 
   openmenuarrow.addEventListener('click', xoaclass, false);
   menuLeft2.addEventListener('mouseover', menuOver, false);
   menuLeft2.addEventListener('mouseout', menuOut, false);
   menu.addEventListener('click', rmclass, false);
-  // menu.addEventListener('mouseout', rmclass, false);
   menuX.addEventListener('click', rmclass, false);
   menuX.addEventListener('click', changer, false);
-
   menu.addEventListener('click', changer, false);
-
-  // menu.addEventListener('mouseout', changer, false);
-
   showHideAppInfo.addEventListener("click", btnHideShow, false);
   showHideAppInfo.addEventListener("click", changerArrow, false);
-};
+// };
 
 
 var video = document.getElementById("myVideo");
