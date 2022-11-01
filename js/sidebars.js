@@ -16,24 +16,30 @@
 //   document.body.classList.toggle("an-menu_mobile");
 // }, false);
 
-window.onload = function () {
+// window.onload = function () {
+  var btnScroll = document.getElementById('btnScroll');
+  var mainSctoll = document.querySelector('main');
+  var windowTop = mainSctoll.scrollTop;
+
   var openmenuarrow = document.getElementById('btn-menu');
   var menu = document.getElementById('navbar-toggle-menu');
   var mainpage = document.getElementById('mainpage');
   var menuX = document.getElementById('menu-x');
   var iconmenu = document.getElementById('icon-menu');
   var staticAppInfo = document.getElementById('staticAppinfoRight');
-  var showHideAppInfo = document.getElementById('showHide');
-  var arrowChanger = document.getElementById('arrowLeftRight');
+  var showHideAppInfo = document.getElementById('showHide')
+  var arrowChanger = document.getElementById('arrowLeftRight')
+  var menuLeft2 = document.querySelector('.menu-left2');
 
-  function xoaclass(){
-    mainpage.classList.toggle("menu-hide");
-  }
   function rmclass(e){
+    mainpage.classList.remove("hovermenu");
+    mainpage.classList.remove("menu-hide");
     mainpage.classList.toggle("an-menu_mobile");
   }
   function changer(){
-    iconmenu.classList.toggle("fa-xmark");
+      mainpage.classList.remove("hovermenu");
+      mainpage.classList.remove("menu-hide");
+      iconmenu.classList.toggle("fa-xmark");
   }
   function btnHideShow(){
     staticAppInfo.classList.toggle("btnShowHideAppInfo");
@@ -41,21 +47,55 @@ window.onload = function () {
   function changerArrow(){
     arrowChanger.classList.toggle("btnShow")
   }
-
+  function xoaclass(){
+    if(!mainpage.classList.contains('hovermenu') && !mainpage.classList.contains('menu-hide')){
+      mainpage.classList.add("hovermenu");
+      mainpage.classList.add("menu-hide");
+    } else {
+      mainpage.classList.remove("hovermenu");
+      mainpage.classList.remove("menu-hide");
+    }
+  }
+  function menuOver(){
+    if(mainpage.classList.contains('hovermenu')){
+      mainpage.classList.remove("menu-hide");
+    }
+  }
+  function menuOut(){
+    if(mainpage.classList.contains('hovermenu')){
+      mainpage.classList.add("menu-hide");
+    }
+  }
+ 
+  function windowTo() {
+    // mainSctoll.scrollTo(0,0);
+    mainSctoll.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }
+  function windowTopfun() {
+    if(mainSctoll.scrollTop > 80 &&  mainSctoll.scrollTop - windowTop > 0){
+      btnScroll.classList.add('show-top');
+      windowTop = mainSctoll.scrollTop;
+    } else {
+      btnScroll.classList.remove('show-top');
+        windowTop = mainSctoll.scrollTop;
+    }
+  };
+  mainSctoll.addEventListener('scroll', function(e) {windowTopfun()}, false);
+  btnScroll.addEventListener('click', windowTo, false);
 
   openmenuarrow.addEventListener('click', xoaclass, false);
+  menuLeft2.addEventListener('mouseover', menuOver, false);
+  menuLeft2.addEventListener('mouseout', menuOut, false);
   menu.addEventListener('click', rmclass, false);
-  // menu.addEventListener('mouseout', rmclass, false);
   menuX.addEventListener('click', rmclass, false);
   menuX.addEventListener('click', changer, false);
-
   menu.addEventListener('click', changer, false);
-
-  // menu.addEventListener('mouseout', changer, false);
-
   showHideAppInfo.addEventListener("click", btnHideShow, false);
   showHideAppInfo.addEventListener("click", changerArrow, false);
-};
+// };
 
 
 var video = document.getElementById("myVideo");
@@ -162,53 +202,9 @@ $('.p_slider__item img').mouseout(function(){
     rotateLeft()
   },3000)
 })
-// document.addEventListener('scroll', function(e) {reveal()}, true);
-// function reveal() {
 
-//   var reveals = document.querySelectorAll(".reveal-show");
 
-//   for (var i = 0; i < reveals.length; i++) {
-//     var windowHeight = window.innerHeight;
-//     var revealtop = reveals[i].getBoundingClientRect().top;
-//     // var revwalpoint = 50;
-//     if (revealtop < windowHeight) {
-//       reveals[i].classList.add("active-show");
-//     } 
-//     else {
-//     reveals[i].classList.remove("active-show");
-//     }
-//   }
-// };
 
-// window.onscroll = function () {scrollFunction()};
-//  function scrollFunction() {
-//    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//      document.getElementById("btnScroll").style.bottom = "100px";
-//    } else {
-//      document.getElementById("btnScroll").style.bottom = "-100px";
-//    }
-//  };
-
-// When the user scrolls down 20px from the top of the document, slide down the navbar
-// window.onscroll = function () { scrollFunction() };
-// function scrollFunction() {
-//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//         document.getElementById("btnScroll").classList.remove("navbarfixed");
-//         document.getElementById("btnScroll").classList.add("navbarNfixed");
-//     } else {
-//         document.getElementById("btnScroll").classList.remove("navbarNfixed");
-//         document.getElementById("btnScroll").classList.add("navbarfixed");
-
-//     }
-// };
-window.addEventListener('scroll', (e) => {
-const currentScrollPos = window.screenY;
-  if (currentScrollPos > 0) {
-    document.getElementById("btnScroll").style.bottom = "-100px";
-  } else {
-    document.getElementById("btnScroll").style.bottom = "100px";
-  }
-});
 
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 3,
@@ -243,25 +239,18 @@ var swiper = new Swiper('.swiper-container', {
   },
 });
 
-// window.addEventListener('resize', resize, false);
-
-// myVideo.height = 100; /* to get an initial width to work with*/
-// resize();
-
-// function resize() {
-// videoRatio = myVideo.height / myVideo.width;
-// windowRatio = window.innerHeight / window.innerWidth; /* browser size */
-
-//     if (windowRatio < videoRatio) {
-//         if (window.innerHeight > 50) { /* smallest video height */
-//                 myVideo.height = window.innerHeight;
-//         } else {
-//           myVideo.height = 50;
-//     }
-//     } else {
-//       myVideo.width = window.innerWidth;
-//     }
-
-// };
-
-
+var reveals = document.querySelectorAll(".reveal-show");
+function reveal() {
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var revealtop = reveals[i].getBoundingClientRect().top;
+    // var revwalpoint = 50;
+    if (revealtop < windowHeight) {
+      reveals[i].classList.add("active-show");
+    } 
+    else {
+    reveals[i].classList.remove("active-show");
+    }
+  }
+};
+window.addEventListener('scroll', function(e) {reveal()}, false);

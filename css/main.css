@@ -592,6 +592,8 @@ a.navbar-brand {
   background: transparent !important;
   padding-left: 2rem;
   padding-right: 2rem;
+  transition: all .8s ease-in-out;
+  
 }
 
 .menutop.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top .container-fluid {
@@ -714,13 +716,16 @@ a.navbar-brand {
   overflow-y: scroll;
   height: 100%;
   box-sizing: border-box;
+  transition: all .8s ease-in-out;
 }
 
 .menu-left2 .list-unstyled .menu-expanded{
   width: 100%;
+  transition: all .8s ease-in-out;
 }
 .menu-left2 .list-unstyled .menu-expanded span {
   font-size: 0.8rem;
+  transition: all .8s ease-in-out;
 }
 
 button:focus {
@@ -741,6 +746,11 @@ button:focus {
 .menu-left2.fixed-top {
   bottom: 0;
   z-index: 1000;
+  position: fixed;
+  height: 100vh;
+  top: 0%;
+  left: 0;
+  transition: all .8s ease-in-out;
 }
 
 .menu-left2 li .btn,
@@ -756,6 +766,7 @@ align-items: center;
 justify-content: center;
 padding: 10px;
 text-align: center;
+transition: all .8s ease-in-out;
 }
 
 .menu-hide .btn-toggle-nav>li .btn+div>ul>li>a {
@@ -769,6 +780,7 @@ padding-left: 10px;
 width: 100%;
 text-align: center;
 margin-right: 0;
+transition: all .8s ease-in-out;
 }
 
 .menu-hide .menu-left2 .collapse,
@@ -1588,7 +1600,7 @@ position: relative;
 }
 .bx-platform-6{
 position: relative;
-} .bx-meta-go-sys, .meta-maketplace-sys{
+} .bx-meta-go-sys, .meta-maketplace-sys, .meta-wallet-sys{
 min-height: 245px;
 }
 .bx-digital{

@@ -73,6 +73,7 @@ main {
 .btn-toggle-nav a i {
     font-size: 32px;
     margin-right: 8px;
+    transition: all .8s ease-in-out;
 }
 .menu-left2 li .btn.btn-toggle::after {
   line-height: 0;
@@ -140,6 +141,7 @@ li.title-li {
 .menu-hide .menu-left2{
   width: 130px !important;
   padding: 5px !important;
+  transition: all .8s ease-in-out;
 }
 
 .menu-hide .menu-left2 .left-logo .logo_1 {
@@ -164,6 +166,7 @@ li.title-li {
 }
 .menu-hide .container-right {
   margin-left: 130px !important;
+  transition: all .8s ease-in-out;
 }
 
 ul.list-sub-collapse>li>a.item-sub-collapse>i{
@@ -398,6 +401,39 @@ and (min-resolution: 192dpi) {
   display: none;
 }
 
+
+/* .hovermenu .container-right {
+  margin-left: 0 !important;
+} */
+.hovermenu .menu-left2 .arrowLeftfillcircle {
+  transform: rotate(180deg);
+}
+.menu-hide .menu-left2 li .btn i, 
+.menu-hide .btn-toggle-nav a i, 
+.menu-hide .menu-left2 li .btn span, 
+.menu-hide .btn-toggle-nav a span,
+.menu-hide .menu-left2 li .btn, 
+.menu-hide .btn-toggle-nav a,
+.menu-left2 .list-unstyled .menu-expanded,
+.menu-left2 .list-unstyled.scroll,
+.left-logo,
+.left-logo *,
+.menu-left2.fixed-top {
+  transition: all .1s ease-in-out !important;
+}
+.hovermenu .menutop.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top {
+  left: 130px !important;
+}
+.hovermenu .menu-left2.fixed-top {
+  z-index: 9999;
+}
+.fixed-top {
+  z-index: 9999;
+}
+.backToTop.show-top {
+  bottom: 10px;
+  z-index: 9999;
+}
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
                     only screen and (min--moz-device-pixel-ratio: 2),
                     only screen and (-o-min-device-pixel-ratio: 2/1),
@@ -408,7 +444,28 @@ and (min-resolution: 192dpi) {
 }
  }
 @media only screen and (max-width: 768px) {
+  .menu-left2.fixed-top{
+    top: 0 !important;
+    overflow: hidden;
+    height: auto !important;
+  }
   .menu-left2 .menu-left3 {
     display: block;
+    left: 280px;
   }
+  .hovermenu .menutop.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top {
+    left: 0px !important;
+  }
+  body#mainpage.an-menu_mobile {
+    max-height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: block;
+  }
+
+  body#mainpage.an-menu_mobile main.block-end {
+      overflow-y: auto;
+      max-height: 100vh;
+  }
+
 }
