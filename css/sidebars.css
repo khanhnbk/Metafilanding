@@ -73,6 +73,7 @@ main {
 .btn-toggle-nav a i {
     font-size: 32px;
     margin-right: 8px;
+    transition: all .8s ease-in-out;
 }
 .menu-left2 li .btn.btn-toggle::after {
   line-height: 0;
@@ -140,6 +141,7 @@ li.title-li {
 .menu-hide .menu-left2{
   width: 130px !important;
   padding: 5px !important;
+  transition: all .8s ease-in-out;
 }
 
 .menu-hide .menu-left2 .left-logo .logo_1 {
@@ -164,6 +166,7 @@ li.title-li {
 }
 .menu-hide .container-right {
   margin-left: 130px !important;
+  transition: all .8s ease-in-out;
 }
 
 ul.list-sub-collapse>li>a.item-sub-collapse>i{
