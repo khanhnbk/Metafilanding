@@ -17,6 +17,10 @@
 // }, false);
 
 window.onload = function () {
+  var btnScroll = document.getElementById('btnScroll');
+  var mainSctoll = document.querySelector('main');
+  var windowTop = mainSctoll.scrollTop;
+
   var openmenuarrow = document.getElementById('btn-menu');
   var menu = document.getElementById('navbar-toggle-menu');
   var mainpage = document.getElementById('mainpage');
@@ -27,12 +31,15 @@ window.onload = function () {
   var arrowChanger = document.getElementById('arrowLeftRight')
   var menuLeft2 = document.querySelector('.menu-left2');
 
-
   function rmclass(e){
+    mainpage.classList.remove("hovermenu");
+    mainpage.classList.remove("menu-hide");
     mainpage.classList.toggle("an-menu_mobile");
   }
   function changer(){
-    iconmenu.classList.toggle("fa-xmark");
+      mainpage.classList.remove("hovermenu");
+      mainpage.classList.remove("menu-hide");
+      iconmenu.classList.toggle("fa-xmark");
   }
   function btnHideShow(){
     staticAppInfo.classList.toggle("btnShowHideAppInfo");
@@ -59,6 +66,23 @@ window.onload = function () {
       mainpage.classList.add("menu-hide");
     }
   }
+ 
+  function windowTo() {
+    mainSctoll.scrollTo(0,0);
+  }
+  function windowTopfun() {
+    if(mainSctoll.scrollTop > 80 &&  mainSctoll.scrollTop - windowTop > 0){
+      btnScroll.classList.add('show-top');
+      windowTop = mainSctoll.scrollTop;
+    } else {
+      btnScroll.classList.remove('show-top');
+        windowTop = mainSctoll.scrollTop;
+    }
+  };
+
+mainSctoll.addEventListener('scroll', function(e) {windowTopfun()}, false);
+btnScroll.addEventListener('click', windowTo, false);
+
   openmenuarrow.addEventListener('click', xoaclass, false);
   menuLeft2.addEventListener('mouseover', menuOver, false);
   menuLeft2.addEventListener('mouseout', menuOut, false);
@@ -180,23 +204,7 @@ $('.p_slider__item img').mouseout(function(){
     rotateLeft()
   },3000)
 })
-document.addEventListener('scroll', function(e) {reveal()}, true);
-function reveal() {
 
-  var reveals = document.querySelectorAll(".reveal-show");
-
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var revealtop = reveals[i].getBoundingClientRect().top;
-    // var revwalpoint = 50;
-    if (revealtop < windowHeight) {
-      reveals[i].classList.add("active-show");
-    } 
-    else {
-    reveals[i].classList.remove("active-show");
-    }
-  }
-};
 
 
 
@@ -233,4 +241,18 @@ var swiper = new Swiper('.swiper-container', {
   },
 });
 
-
+var reveals = document.querySelectorAll(".reveal-show");
+function reveal() {
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var revealtop = reveals[i].getBoundingClientRect().top;
+    // var revwalpoint = 50;
+    if (revealtop < windowHeight) {
+      reveals[i].classList.add("active-show");
+    } 
+    else {
+    reveals[i].classList.remove("active-show");
+    }
+  }
+};
+window.addEventListener('scroll', function(e) {reveal()}, false);
