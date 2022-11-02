@@ -3437,9 +3437,9 @@ min-height: 212px;
     min-height: 239px;
 }
  }
- @media (max-width: 1400px) {
+ @media (max-width: 1399.98px) {
   .menu-hide .container-right {
-    margin-left: 100px!important;
+    margin-left: 122px!important;
 }
   .bx-digital,
   .bx-web-gaming {
