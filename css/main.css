@@ -3437,7 +3437,11 @@ min-height: 212px;
     min-height: 239px;
 }
  }
+<<<<<<< HEAD
  @media (max-width: 1399.98px) {
+=======
+ @media (max-width: 1400px) {
+>>>>>>> 40ad938431620de07e75320850c1228e8c141820
   .menu-hide .container-right {
     margin-left: 122px!important;
 }
