@@ -19,7 +19,7 @@
  player = new YT.Player('ytplayer-ginseng', {
      height: '360',
      width: '640',
-     videoId: 'hiPo9MFGfg0',
+     videoId: 'SpXR7w1NnMk',
      playerVars: { 'autoplay': 0, 'controls': 1 },
      events: {
        'onStateChange': onPlayerStateChangeGinseng
@@ -28,7 +28,7 @@
  player = new YT.Player('ytplayersc', {
      height: '360',
      width: '640',
-     videoId: 'dBVwfduUgKQ',
+     videoId: 'lo0CRy9gmTo',
      playerVars: { 'autoplay': 0, 'controls': 1 },
      events: {
          'onStateChange': onPlayerStateChangeGinseng
