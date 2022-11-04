@@ -421,9 +421,9 @@ and (min-resolution: 192dpi) {
 .menu-left2.fixed-top {
   transition: all .1s ease-in-out !important;
 }
-.hovermenu .menutop.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top {
+/* .hovermenu .menutop.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top {
   left: 130px !important;
-}
+} */
 .hovermenu .menu-left2.fixed-top {
   z-index: 9999;
 }
@@ -434,16 +434,6 @@ and (min-resolution: 192dpi) {
   bottom: 10px;
   z-index: 9999;
 }
-@media only screen and (max-width: 912px){
-  .hovermenu .menutop.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top {
-    left: 0 !important;
-  }
-}
-@media only screen and (max-width: 820px){
-  .menutop.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top {
-      left: 0!important;
-  }
- }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
                     only screen and (min--moz-device-pixel-ratio: 2),
                     only screen and (-o-min-device-pixel-ratio: 2/1),
