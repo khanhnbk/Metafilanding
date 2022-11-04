@@ -3671,6 +3671,311 @@ min-width: 150px;
 width: 150px;
 }
 }
+@media only screen and (max-width: 912px) {
+    .phai {
+      flex-direction: row;
+      margin-bottom: 0 !important;
+      margin-right: 0!important;
+    }
+  
+    .menutop.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top .container-fluid {
+      height: 45px;
+      padding: 0 5px 0 16px;
+    }
+  
+    .col-5 {
+      width: 100%;
+    }
+  
+    .menutop .nav-link {
+      justify-content: left;
+    }
+  
+    .an-menu_mobile .menu-left2 {
+      width: 0 !important;
+      display: none !important;
+    }
+  
+    .an-menu_mobile .container-right {
+      margin-left: 0 !important;
+    }
+  
+    .an-menu_mobile .menutop {
+      left: 0 !important;
+    }
+  
+    .menu-left2 {
+      width: 75% !important;
+    }
+  
+    .container-right {
+      margin-left: 75% !important;
+    }
+  
+    .menutop {
+      left: 75% !important;
+    }
+  
+  
+  
+    .menutop {
+      flex-wrap: nowrap;
+      min-width: 100vW;
+    }
+  
+    .navbar-dark .navbar-toggler {
+      color: #fff;
+      border-color: transparent;
+    }
+  
+    .navbar-toggler:focus {
+      text-decoration: none;
+      outline: 0;
+      box-shadow: unset;
+    }
+  
+    .embed-responsive.embed-responsive-16by9 iframe {
+      width: 100%;
+      height: 230px;
+    }
+  
+    .bgvideo,
+    .bgvideo2 {
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  
+    .col.col-3.img-show {
+      width: 100%;
+    }
+  
+    .img-show img {
+      max-width: 66%;
+    }
+  
+    .content-fashion {
+      max-height: 400px;
+      overflow: auto;
+    }
+    .avatar-fashion .content-fashion .nav-pills .nav-link{
+      font-size: 1rem;
+    }
+    .avatar-fashion .content-fashion .nav-pills .ct-fh-nav-link.active, .avatar-fashion .content-fashion .nav-pills .show.ct-fh-nav-link{
+      font-size: 1rem;
+      padding: 10px 15px 0 15px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  
+    .content-fashion:before {
+      display: none;
+    }
+  
+    .content-fashion:after {
+      display: none;
+    }
+  
+    .content-fashion>.row>.col {
+      border: solid 1px rgb(6 66 84 / 50%) !important;
+      margin-bottom: 12px;
+    }
+  
+    .footer .row .col-4,
+    .footer .row .col {
+      width: 100%;
+      flex: 0 0 auto;
+    }
+  
+    .tab-useCase-item {
+      width: 100%;
+    }
+  
+    .nav-pills .nav-link {
+      width: 100%;
+      margin-top: 6px;
+      margin-bottom: 6px;
+      min-height: 111px;
+    }
+  
+    .ca {
+      height: 130px;
+      margin-top: -85px;
+      display: block;
+      bottom: auto;
+      top: 0;
+      right: -40px;
+    }
+  
+    .bosat {
+      left: -40px;
+      height: 80px;
+    }
+  
+    .img {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .aland-owner .col .khung {
+      padding: 12px 0;
+      justify-content: center;
+    }
+  
+    .btn.btn-primary {
+      min-width: 100%;
+    }
+  
+    .aland-owner .content {
+      justify-content: center;
+    }
+  
+    .col.col-img_card {
+      max-width: 90px;
+    }
+  
+    .content-card,
+    .comunity-update_content .title {
+      padding-left: 0;
+    }
+  
+    .card-body {
+      padding-top: 15px;
+      padding-bottom: 2px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  
+    .fix-img_card {
+      height: 100%;
+    }
+  
+    .avatar-fashion {
+      padding-right: 0;
+    }
+  
+    .menu-left2,
+    .menutop,
+    .container-right {
+      transition: all 300ms;
+    }
+  
+    .an-menu_mobile .menu-left2 {
+      overflow: hidden;
+    }
+  
+    .footer2 .btn.btn-dark {
+      width: calc(50% - 15px);
+      margin-bottom: 12px;
+      margin-left: 6px;
+      margin-right: 6px;
+    }
+  
+    .right-section-2{
+      width: 100%;
+    }
+    .tit-group>h2{
+      text-align: center;
+    }
+    .bx-digital, 
+    .bx-web-gaming, 
+    .bx-meta-id-sys, 
+    .bx-meta-go-sys,  
+    .meta-maketplace-sys, 
+    .meta-wallet-sys{
+      width: 100%;
+      min-height: auto;
+    }
+    .bx-platform-1, .bx-platform-2, .bx-platform-3, .bx-platform-4, .bx-platform-5, .bx-platform-6{
+      padding-bottom: 15px;
+    }
+    .digi-covalue-img{
+      margin-top: 15px;
+    }
+    .agriGinSec4{
+      margin-top: 15px;
+    }
+    .bx-tt-ct {
+      padding: calc(var(--bs-gutter-x) * 1);
+    }
+    .img-overview{
+      padding: calc(var(--bs-gutter-x) * 1);
+    }
+    .tab-useCase{
+      flex-direction: row;
+      padding: calc(var(--bs-gutter-x) * 1);
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      width: 98%!important;
+        min-width: 98%;
+        min-height: 122px;
+    }
+    .ct-item-ginseng-lf{
+      min-height: auto;
+    }
+    .useCaseitem .ct-left{
+      min-width: 120px;
+    }
+    .useCaseitem .ct-right ul li{
+      white-space: nowrap;
+    }
+    .mb-3{
+      padding-top: calc(var(--bs-gutter-x) * 1);
+    }
+    .landCity{
+      flex-direction: column;
+    }
+    .landCity>.landCity-row{
+      width: 100%;
+    }
+    .bot-img{
+      justify-content: center;
+      min-height: 875px;
+    }
+    .bot-img img{
+      width: 50%;
+    }
+    .our-advisors{
+      flex-direction: column;
+    }
+    .advisors{
+      width: 100%;
+    }
+    .section-10 .solutions-box {
+      margin-bottom: 20px;
+    }
+    .lst-logo-partners>.lst-logo-partners-col {
+      flex: 1 1 auto;
+      width: 50%;
+    }
+    .item-sec11{
+      margin-bottom: calc(var(--bs-gutter-x) * 1);
+    }
+    .bx-hubsboard{
+      width: 100%;
+      padding: 0;
+    }
+    .hubsboard{
+      flex-direction: column;
+    }
+    .label-done{
+      left: 40%;
+    }
+    .ar-stp-r::before{
+      border-top: 0;
+      border-left: 0;
+      border-bottom: 0;
+    }
+    .ct-phase-3, .ct-phase-2, .ct-phase-5{
+      min-height: auto;
+    }
+    .team-item{
+      margin-bottom: calc(var(--bs-gutter-x) * 1);
+    }
+    .solution-item{
+      margin-bottom: calc(var(--bs-gutter-x) * 1);
+    }
+  }
 @media only screen and (max-width: 820px) {
   body.block-end:not(.an-menu_mobile) .container-right,
     body.blur:not(.an-menu_mobile) .container-right {

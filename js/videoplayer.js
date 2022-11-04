@@ -19,7 +19,7 @@
  player = new YT.Player('ytplayer-ginseng', {
      height: '360',
      width: '640',
-     videoId: 'Mii5stzfOQk',
+     videoId: 'LpM55Ky_ebc',
      playerVars: { 'autoplay': 0, 'controls': 1 },
      events: {
        'onStateChange': onPlayerStateChangeGinseng
@@ -137,6 +137,15 @@ player = new YT.Player('ytplayer-park', {
     height: '360',
     width: '640',
     videoId: 'gUIEDkxC424',
+    playerVars: { 'autoplay': 0, 'controls': 1 },
+    events: {
+        'onStateChange': onPlayerStateChangeGinseng
+    }
+});
+player = new YT.Player('ytplayer-park2', {
+    height: '360',
+    width: '640',
+    videoId: 'rYS6YJdIQfA',
     playerVars: { 'autoplay': 0, 'controls': 1 },
     events: {
         'onStateChange': onPlayerStateChangeGinseng
