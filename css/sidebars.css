@@ -434,6 +434,11 @@ and (min-resolution: 192dpi) {
   bottom: 10px;
   z-index: 9999;
 }
+@media only screen and (max-width: 912px){
+  .hovermenu .menutop.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top {
+    left: 0 !important;
+  }
+}
 @media only screen and (max-width: 820px){
   .menutop.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top {
       left: 0!important;
