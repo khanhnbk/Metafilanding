@@ -133,6 +133,9 @@ player = new YT.Player('ytplayer-dao1', {
         'onStateChange': onPlayerStateChangeGinseng
     }
 });
+
+
+/*Core Value*/
 player = new YT.Player('ytplayer-park', {
     height: '360',
     width: '640',
